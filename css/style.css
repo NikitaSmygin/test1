@@ -168,7 +168,8 @@ li {
 .sliders {
 	text-shadow: none;
 	position: relative;
-    top: 95px;;
+	top: 95px;;
+	
 }
 .slide2 h2::before,
 .slide3 h2::before {
@@ -365,6 +366,7 @@ footer {
 .information a:hover {
 	color: gold;
 }
+
 .navbar-default {
 	background: none;
 	border: none;
@@ -467,7 +469,7 @@ footer {
 	.slide3 {
 		width: 360px;
 		padding-left: 10%;
-		padding-right: 2px;
+		padding-right: 10px;
 	}
 	.slide3 a {
 		margin-top: 5px;
