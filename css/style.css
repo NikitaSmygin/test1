@@ -1,7 +1,7 @@
 body{
 	font-family: 'Arial','Arimo', 'Open Sans', sans-serif;
 	font-size: 16px;
-	background: #fdfcfb;
+	background: #ffffff;
 	font-weight: normal;
 }
 a:hover {
@@ -18,9 +18,6 @@ p {
 }
 li {
 	list-style-type: none;
-}
-.container {
-	padding: 0;
 }
 .arrow {
 	display: inline-block;
@@ -91,7 +88,7 @@ li {
 }
 .navbar::before {
 	height: 2px;
-	width: 100%;
+	width: 102%;
 	background: #44a0d6; /* Old Browsers */
 	background: -webkit-linear-gradient(left,#44a0d6,#5bc8bc); /*Safari 5.1-6*/
 	background: -o-linear-gradient(left,#44a0d6,#5bc8bc); /*Opera 11.1-12*/
@@ -259,36 +256,14 @@ li {
 	font: 'Arial';
 	margin-top: 58px;
 }
+.service {
+	margin-top: 36px;
+}
 .services h4 {
 	font: 'Arial';
 	font-size: 16px;
 	font-weight: bold;
 	color: #49c8b7;
-}
-.services {
-	margin-top: 50px;
-	height: 279px;
-}
-.services div {
-	padding-top: 180px;
-}
-.building {
-	background: url(../img/1.jpg) 1.6rem 0 no-repeat;
-}
-.repairs {
-	background: url(../img/2.jpg) 1.6rem 0 no-repeat;
-}
-.design {
-	background: url(../img/3.jpg) 1.6rem 0 no-repeat;
-}
-.audit {
-	background: url(../img/4.jpg) 1.6rem 0 no-repeat;
-}
-.courses {
-	background: url(../img/5.jpg) 1.6rem 0 no-repeat;
-}
-.school {
-	background: url(../img/6.jpg) 1.6rem 0 no-repeat;
 }
 .consultation h2,
 .consultation p
@@ -371,7 +346,7 @@ footer {
 .about::before {
 	width: 100%;
 	height: 1px;
-	background: #959595;
+	background: #3b6ba6;
 	margin-bottom: 27px;
 	margin-top: 22px;
 }
@@ -380,8 +355,19 @@ footer {
 	line-height: 19px;
     color: #a4c4e4;
 }
+.about div:nth-child(1) {
+	padding-left: 0;
+}
+.about div:nth-child(2) {
+	text-align: right;
+	padding-right: 0;
+}
 .information a:hover {
 	color: gold;
+}
+.navbar-default {
+	background: none;
+	border: none;
 }
 @media (min-width: 1200px) {
 	.container {
@@ -427,7 +413,6 @@ footer {
 	.consultation .btn{
 		margin: 0 0 0 50px;
 	}
-	.service,
 	.footer {
 		display: flex;
 		flex-direction: column;
@@ -436,6 +421,10 @@ footer {
 	.social {
 		width: 100%;
 		margin: 0 auto;
+	}
+	.about div {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 /* Small Devices, Tablets */
@@ -466,8 +455,9 @@ footer {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.services {
+	.dropdown-menu {
 		width: 100%;
+		text-align: center;
 	}
 	.sliders h2{
 		font-size: 22px;
